@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/broken-noise.png");
+}
+
+#theClockContainer {
+    margin: 2rem auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#theClockContainer .theClockHead {
+    color: white;
+}
+
+#theClockContainer .theClockHead h1 {
+    font-size: 4rem;
+    font-family: "Mukta";
+    line-height: 30px;
+    border-bottom: 2px dotted white;
+    text-align: center;
+    padding: 1rem;
+}
+
+#theClockContainer .theClockHead p {
+    font-family: "Pacifico";
+    text-align: center;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+}
+
+
+.theClock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./images/clock.png);
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+}
+
+.theClock .theHour,
+.hr {
+    width: 160px;
+    height: 160px;
+}
+
+.theClock .theMin,
+.mn {
+    width: 190px;
+    height: 190px;
+}
+
+.theClock .theSec,
+.sc {
+    width: 230px;
+    height: 230px;
+}
+
+.hr:before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 80px;
+    background-color: aqua;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+}
+
+.mn:before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background-color: #fff;
+    border-radius: 6px 6px 0 0;
+}
+
+.sc:before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    z-index: 12;
+    border-radius: 6px 6px 0 0;
+    background-color: rgb(0, 153, 255);
+}
+
+.theHour,
+.theMin,
+.theSec {
+    position: absolute;
+}
+
+.theClock:before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 10000;
+}
+
+.hr, .mn, .sc{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    font-family: "Mukta";
+    text-align: center;
+    color: white;
+}
+
+footer h3 a{
+    text-decoration: underline;
+    font-family: "Pacifico";
+    color: rgb(0, 123, 255);
+    letter-spacing: 2px;
+}
+
+footer p{
+    font-size: 1.2rem;
+    font-family: "Pacifico";
+}
