@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+
+}
+
+body {
+  background-color: #00c4de;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+}
+
+h1 {
+  margin: 30px;
+  font-family: 'Merriweather', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 7rem;
+  color: #e4e4e4;
+}
+
+p {
+  font-size: 2rem;
+  color: #e4e4e4;
+  font-family: 'Merriweather', cursive;
+}
+
+img {
+  width: 80%;
+}
+
+footer {
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+
+}
