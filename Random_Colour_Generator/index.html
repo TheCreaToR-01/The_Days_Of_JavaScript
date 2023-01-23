@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Colour Generator</title>
+
+    <link rel="icon" href="./images/wheel.png">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <h1 id="heading">Random Colour Generator</h1>
+    <div class="themeBtn">
+        <button id="theme">
+            <i class="fa-solid fa-sun"></i>
+        </button>
+    </div>
+
+    <div class="clpPopup" id="popup">
+        <p>Copied to Clipboard!</p>
+    </div>
+
+    <div class="buttons">
+    <button id="refreshBtn" class="Btn" onclick="addColor()">Refresh</button>
+    <button id="contextBtn" class="Btn">Click on any box to copy the code</button>
+</div>
+    <div class="boxes" id="boxes">
+    </div>
+
+    <footer class="footer">
+        <h3>Made by <a href="https://github.com/TheCreaToR-01">Kushagra Dubey</a></h3>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
